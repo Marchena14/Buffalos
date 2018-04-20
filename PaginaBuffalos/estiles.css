@@ -1,0 +1,536 @@
+@import url(http://weloveiconfonts.com/api/?family=brandico);
+
+/******BOTONES SOCIALES*******/
+
+/* brandico */
+[class*="brandico-"]:before {
+  font-family: 'brandico', sans-serif;
+}
+
+ul.social-buttons {
+  text-align: center;
+  margin-top: 50px;
+}
+
+ul.social-buttons li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+ul.social-buttons li a {
+  width: 60px;
+  height: 60px;
+  display: block;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 30px;
+  line-height: 60px;
+  color: white;
+}
+
+ul.social-buttons li a.brandico-twitter-bird {
+  background-color: #4099FF;
+}
+
+ul.social-buttons li a.brandico-facebook {
+  background-color: #3B5998;
+}
+
+ul.social-buttons li a.brandico-instagram {
+  background-color: #3f729b;
+}
+
+ul#demo2 li a {
+  transition: transform 0.5s ease-in-out;
+}
+
+ul#demo2 li:hover a {
+  transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+}
+
+@font-face{
+	font-family: "FontAwesome";
+	src: url("fonts/FontAwesome.otf");
+}
+
+#anadir{
+	margin: auto;
+}
+.spanError{
+	color: red;
+}
+.spanCorrecto{
+	color: green;
+}
+#spanDireccion{
+	margin-left: 6.5em;
+}
+#barraProgreso, #barraSpan{
+	display:flex;
+}
+
+#progressBar, #spanBarra{
+	margin: auto;
+}
+
+.banner{
+	width: 100%;
+	height: 200px;;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.bannerAdmin{
+	border: solid;
+	height: 15ex;
+	background-color: blue;
+	display: flex;
+}
+
+.bannerAdmin h1{
+	margin: auto;
+}
+.adminPanel{
+	background-color: #CCCCCC;
+	background-image: none;
+}
+
+.adminPanel h1{
+	text-align: center;
+}
+
+.listaOpc{
+	display: flex;
+}
+
+.listaOpc2,.listaOpc3{
+	margin: auto;
+}
+
+.listaOpc2 ul{
+	text-align: center;
+	list-style: none;
+}
+
+.listaOpc2 li{
+	margin-bottom: 2ex;
+}
+
+.dialogInfo{
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0,0,0);
+	
+}
+
+.formInscripcion{
+	background-color: rgba(255,255,0,0.4);
+	
+}
+.botonAdmin{
+	 border: none;
+	 background: #3a7999;
+	 color: #f2f2f2;
+	 padding: 10px 35px;
+	 overflow: hidden;
+	 font-size: 18px;
+	 border-radius: 5px;
+	 position: relative;
+	 box-sizing: border-box;
+	 transition: all 700ms ease;
+}
+
+.botonAdmin:before {
+	 font-family: FontAwesome;
+	 content:"\f07a";
+	 position: absolute;
+	 top: 11px;
+	 left: -30px;
+	 transition: all 200ms ease;
+}
+
+#botonBuffalos:before{
+	content:"\f1ae";
+}
+#botonInstituto:before{
+	content:"\f19c";
+}
+#botonActividades:before{
+	
+}
+#botonProductos:before{
+	
+}
+#botonMonitores:before{
+	
+}
+#botonPaquetes:before{
+	
+}
+.botonAdmin:hover {
+ background: rgba(0,0,0,0);
+ color: #3a7999;
+ box-shadow: inset 0 0 0 3px #3a7999;
+}
+
+.botonAdmin:hover:before {
+ left: 7px;
+}
+
+body{
+	background: green;
+	/*background: -webkit-linear-gradient(blue,cyan);
+	background: -o-linear-gradient(blue,cyan);
+	background: -moz-linear-gradient(blue,cyan);
+	background: linear-gradient(blue,cyan);*/
+	overflow-x: hidden;
+	background-image: url("images/campamento.jpg");
+	background-repeat:no-repeat;
+	background-size:100%;
+
+} 
+
+#label_nombre, #label_apellidos, #label_dni, #label_fNac, #label_telefono, #label_direccion,
+#label_instituto, #label_email, #label_tipoBuffalo{
+	display: block;
+	
+	float: left;
+	text-align: right;
+	width: 6em;
+	padding-right: 0.5em;
+	font-weight: bold;
+	color: blue;
+	
+}
+
+#divPaquete{
+	border: solid;
+	border-color: red;
+	
+}
+
+.div_error{
+	margin-left: 5em;
+	margin-bottom: 2ex;
+	border-style: solid;
+	border-color: black;
+	width: 22em;
+	color: red;
+	font-weight: bold;
+}
+
+#div_confirmar{
+	margin-top: 2ex;
+	text-align: center;
+}
+
+.exitoFormulario{
+	margin: 0 auto;
+	border-style: solid;
+	background-color:#999999;
+	color: blue;	
+	text-align: center;
+	font-weight: bold;
+	width: 70%;
+}
+
+
+.barraBotones{
+	position: relative;
+
+}
+
+.imgSlide{
+	width: 100%
+}
+
+nav{
+    /*Bordes redondeados*/
+    -webkit-border-radius:10px;/*Para chrome y Safari*/
+    -moz-border-radius:10px;/*Para Firefox*/
+    -o-border-radius:10px;/*Para Opera*/
+    border-radius:10px;/*El estandar por defecto*/
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#CCC));/*Para chrome y Safari*/
+    /*Degradados*/
+    background-image: -moz-linear-gradient(top center, #10BEE3, #000);/*Para Firefox*/
+    background-image: -o-linear-gradient(top, #FFF, #CCC);/*Para Opera*/
+    background-image: linear-gradient(top, #FFF, #CCC);/*El estandar por defecto*/
+    overflow:hidden;
+    padding:10px;
+    width:99%;
+    height: 4.5ex;
+  
+}
+
+nav ul{
+    list-style:none;
+    padding:0;
+    position: relative;
+	float: left;
+	margin: 0 auto;
+	margin-left: 27%;
+}
+
+nav ul li{
+    /*Bordes redondeados*/
+    -webkit-border-radius:5px;/*Chrome y Safari*/
+    -moz-border-radius:5px;/*Firefox*/
+    -o-border-radius:5px;/*Opera*/
+    border-radius:5px;/*Estandar por defecto*/
+    float:left;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:16px;
+    font-weight:bold;
+    margin-right:10px;
+    text-align:center;
+    /*Sombras para texto, los mismos parametros que box-shadow*/
+    /*text-shadow: 0px 1px 0px #FFF;*/
+
+}
+
+nav ul li:hover{
+    /*Degradado de fondo*/
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#FFF), to( #E3E3E3));/*Chrome y Safari*/
+    background-image: -moz-linear-gradient(top center, #FFF, #E3E3E3);/*Firefox*/
+    background-image: -o-linear-gradient(top, #FFF, #E3E3E3);/*Opera*/
+    background-image: linear-gradient(top, #FFF, #E3E3E3);/*Estandar por defecto*/
+    /*Sombras*/
+    -webkit-box-shadow:  1px -1px 0px #999;/*Chrome y Safari*/
+    -moz-box-shadow:  1px -1px 0px #999;/*Firefox*/
+    -o-box-shadow:  1px -1px 0px #999;/*Opera*/
+    box-shadow:  1px -1px 0px #999;/*Estandar por defecto*/
+    border:1px solid #E3E3E3;
+}
+
+nav ul li a{
+    color:#fdff00;
+    display:block;
+    padding:10px;
+    text-decoration:none;
+    /*Transiciones*/
+    -webkit-transition: 0.4s linear all;
+    -moz-transition: 0.4s linear all;
+    -o-transition: 0.4s linear all;
+    transition: 0.4s linear all;
+}
+
+nav ul li a:hover {
+    color:#000;
+}
+
+.botonLogin{
+	float: right;
+	position: relative;
+	background-color: red;
+	
+}
+
+.menuIzq{
+	position: relative;
+	margin-top: 2ex;
+	float:left;
+	width: 20%;
+	height: 100%;
+	/*background-image: url("images/menus.png");
+	background-repeat: no-repeat;
+	background-size: 100%;*/
+}
+
+.menuCentral{
+	margin-left: 20%;
+	margin-top: 2ex;
+	position: relative;
+	width: 50%;
+	height: 100%;
+	/*background-image: url("images/fondoMedio.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;*/
+}
+
+
+.menuDer{
+	margin-top: 2ex;
+	position: relative;
+	float: right;
+	width: 30%;
+	height: 100%;
+	/*background-image: url("images/menus.png");
+	background-repeat: no-repeat;
+	background-size: 100%;*/
+}
+
+.menuDer h1{
+	text-align: center;
+	padding-top: 1ex;
+}
+/*@import "lesshat";*/
+
+.botonIzquierda {
+  width: 75%;
+  height: 17ex;
+  position: relative;
+  left: 0.5em;
+  /*right: 0;*/
+  top: 8ex;
+  margin: 0 auto;
+
+}
+.div-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ 
+}
+.div-img .img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+}
+.div-img:hover .img {
+  transform: rotate(-10deg);
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+}
+
+.menuCentral h1{
+	text-align: center;
+	font-size:55px;
+	color: yellow;;
+}
+
+.tablaInfo{
+	border: 1px;
+	margin-top: 3ex;
+	width:399px;
+	height:40%;
+	
+}
+
+.tablaInfo th{
+	width:399px;
+	height: 84px;
+	background-image: url("images/tabla.png");
+	background-repeat:no-repeat;
+	/*background-size:100%;*/
+
+}
+
+.tablaInfo tr{
+	text-align:center;
+}
+.tablaInfo td{
+	
+	
+	vertical-align:top;
+	padding:15px;
+	border-left: yellow 2px solid;
+	border-bottom: yellow 2px solid;
+	border-right: yellow 2px solid;
+	border-radius: 0px 0px 0px 10px;
+	background: white;
+	
+}
+
+.tablaInfo h2{
+	
+}
+
+.tablaInfo p{
+	margin-top:1ex;
+}
+
+.bodyError{
+	background: white;
+}
+.bodyError h1{
+	margin-top: 40px;
+	margin-left: 2em;
+	color: red;
+}
+
+.bodyError .msgError{
+	margin-top: 1ex;
+	margin-left: 6em;
+}
+
+.botonVolver{
+	margin-top: 1ex;
+}
+
+.msgErrorAvanzado{
+	margin-top: 1ex;
+	margin-left: 6em;
+	width: 50em;
+}
+.bodyError fieldset{
+	border-color: red;
+}
+
+.bodyTabla{
+	background: white;
+}
+
+.tablaPaginada{
+	text-align: center;
+	border-collapse: collapse;
+	margin: auto;
+	margin-top:5ex;
+}
+
+.tablaPaginada th{
+	background-color: green;
+}
+
+.tablaPaginada tr td{
+		
+	background-color: #AFEEEE;
+	
+}
+
+.buscadorPagina{
+	text-align: center;
+	margin: auto;
+	margin-bottom: 2ex;
+	
+}
+.divMostrando{
+	text-align: center;
+	margin: auto;
+	
+}
+
+.editar_fila{
+	border: 0;
+	background-color: transparent;
+}
+
+.borrar_fila{
+	background-color: transparent;
+}
+
+.footer{
+	border: solid;
+	width: 100%;
+	background-color: red;
+	margin-bottom: 0;
+	
+}
+
